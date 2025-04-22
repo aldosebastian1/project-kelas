@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Tipografi Website Apple</title>
+    <style>
+        /* Reset dasar dan pengaturan font dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Font dasar Apple-like (SF Pro Display) */
+        @font-face {
+            font-family: 'SF Pro Display';
+            src: url('https://example.com/fonts/sf-pro-display.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #1d1d1f;
+            line-height: 1.5;
+            background-color: #ffffff;
+        }
+
+        /* Container utama dengan gaya Apple */
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        /* ======== HIERARKI TIPOGRAFI ======== */
+        
+        /* Headline utama - Besar, berani, pusat perhatian */
+        h1 {
+            font-size: 56px;
+            font-weight: 600;
+            letter-spacing: -0.005em;
+            line-height: 1.07;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Subheading - Ukuran medium, memberikan konteks */
+        h2 {
+            font-size: 32px;
+            font-weight: 500;
+            letter-spacing: 0;
+            line-height: 1.2;
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+
+        /* Judul seksi - Lebih kecil tapi masih menonjol */
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 0.002em;
+            line-height: 1.25;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        /* Teks utama - Ukuran yang nyaman untuk dibaca */
+        p {
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: 0.003em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Teks kecil - Untuk keterangan atau informasi sekunder */
+        .small-text {
+            font-size: 12px;
+            line-height: 1.33;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            color: #86868b;
+        }
+
+        /* ======== VARIASI BERAT FONT ======== */
+        
+        /* Ultra ringan untuk judul besar */
+        .ultralight {
+            font-weight: 100;
+        }
+        
+        /* Ringan untuk judul elegan */
+        .light {
+            font-weight: 300;
+        }
+        
+        /* Regular untuk teks standar */
+        .regular {
+            font-weight: 400;
+        }
+        
+        /* Medium untuk penekanan ringan */
+        .medium {
+            font-weight: 500;
+        }
+        
+        /* Semi-bold untuk subheading */
+        .semibold {
+            font-weight: 600;
+        }
+        
+        /* Bold untuk penekanan kuat */
+        .bold {
+            font-weight: 700;
+        }
+
+        /* ======== WARNA TEKS ======== */
+        
+        /* Warna utama sesuai tema Apple */
+        .text-dark {
+            color: #1d1d1f;
+        }
+        
+        .text-medium {
+            color: #515154;
+        }
+        
+        .text-light {
+            color: #86868b;
+        }
+        
+        .text-blue {
+            color: #0066CC; /* Warna biru Apple untuk links dan CTA */
+        }
+        
+        .text-white {
+            color: #ffffff;
+        }
+
+        /* ======== KOMPOSISI DAN ALIGNMENT ======== */
+        
+        /* Centered text seperti halaman produk Apple */
+        .text-center {
+            text-align: center;
+        }
+        
+        /* Left aligned untuk blok teks dan deskripsi */
+        .text-left {
+            text-align: left;
+        }
+        
+        /* Hero section - tipografi menonjol dengan spacing yang luas */
+        .hero-section {
+            padding: 120px 0;
+            text-align: center;
+            background-color: #f5f5f7;
+        }
+        
+        .hero-section h1 {
+            font-size: 56px;
+            margin-bottom: 15px;
+        }
+        
+        .hero-section p {
+            font-size: 21px;
+            line-height: 1.4;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        /* ======== SPASI DAN RUANG PUTIH ======== */
+        
+        /* Spacing section untuk memisahkan konten */
+        .section-spacing {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        
+        /* Paragraf dengan spacing yang baik */
+        .paragraph-spacing {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            line-height: 1.5;
+        }
+
+        /* ======== RESPONSIVITAS ======== */
+        
+        @media only screen and (max-width: 734px) {
+            .container {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 40px;
+                letter-spacing: -0.003em;
+            }
+            
+            h2 {
+                font-size: 27px;
+            }
+            
+            h3 {
+                font-size: 21px;
+            }
+            
+            p {
+                font-size: 16px;
+            }
+            
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .hero-section h1 {
+                font-size: 36px;
+            }
+            
+            .hero-section p {
+                font-size: 19px;
+            }
+        }
+
+        /* Untuk layar yang sangat kecil */
+        @media only screen and (max-width: 374px) {
+            h1 {
+                font-size: 32px;
+            }
+            
+            .hero-section h1 {
+                font-size: 28px;
+            }
+            
+            .hero-section p {
+                font-size: 17px;
+            }
+        }
+
+        /* ======== CONTOH LAYOUT ======== */
+        
+        /* Grid untuk produk seperti pada situs Apple */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .product-item {
+            text-align: center;
+        }
+        
+        .product-item h3 {
+            font-size: 21px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .product-item p {
+            font-size: 14px;
+            color: #515154;
+            margin-bottom: 15px;
+        }
+        
+        /* Grid responsif */
+        @media only screen and (max-width: 734px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+        
+        @media only screen and (max-width: 374px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contoh penggunaan tipografi Apple pada halaman web -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>iPhone 14 Pro</h1>
+            <p class="medium">Pro. Beyond.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-spacing">
+            <h2 class="text-center">Analisis Tipografi Website Apple</h2>
+            
+            <div class="paragraph-spacing">
+                <p>Tipografi pada website Apple menunjukkan pendekatan yang sangat disiplin dan terstruktur, menjadi kunci dalam menciptakan identitas visual yang kuat dan pengalaman pengguna yang optimal.</p>
+            </div>
+            
+            <h3>Font dan Keluarga Huruf</h3>
+            <p>Apple menggunakan font SF Pro Display—font khusus yang dikembangkan sendiri. Font ini memiliki karakteristik sans-serif bersih dengan bentuk geometris modern dan ketebalan beragam dari ultra-light hingga bold.</p>
+            
+            <h3>Hierarki Ukuran</h3>
+            <p>Apple menggunakan kontras ukuran yang jelas untuk mengarahkan mata, dari headline utama berukuran besar (56px) hingga teks legal berukuran kecil (12px).</p>
+            
+            <h3>Spasi dan Ruang Putih</h3>
+            <p>Website Apple terkenal dengan penggunaan ruang putih (white space) yang banyak dengan leading yang longgar membuat teks terasa "bernafas" dan margin yang lega di sekitar blok teks.</p>
+            
+            <h3>Warna dan Kontras</h3>
+            <p>Penggunaan warna dalam tipografi Apple sangat terkendali dengan teks utama hitam pekat pada latar putih, atau putih pada latar hitam untuk kontras tinggi.</p>
+        </div>
+
+        <div class="section-spacing">
+            <h2 class="text-center">Contoh Implementasi Tipografi</h2>
+            
+            <div class="product-grid">
+                <div class="product-item">
+                    <h3>iPhone</h3>
+                    <p>Kemampuan pro. Kemudahan iPhone.</p>
+                    <p class="text-blue">Pelajari lebih lanjut &gt;</p>
+                </div>
+                
+                <div class="product-item">
+                    <h3>MacBook Air</h3>
+                    <p>Tipis. Ringan. Bertenaga.</p>
+                    <p class="text-blue">Pelajari lebih lanjut &gt;</p>
+                </div>
+                
+                <div class="product-item">
+                    <h3>iPad Pro</h3>
+                    <p>Performa yang tak tertandingi.</p>
+                    <p class="text-blue">Pelajari lebih lanjut &gt;</p>
+                </div>
+            </div>
+        </div>
+        
+        <p class="small-text text-center">
+            Copyright © 2025 Apple Inc. Hak cipta dilindungi undang-undang. Contoh kode ini hanya untuk tujuan demonstrasi.
+        </p>
+    </div>
+</body>
+</html>

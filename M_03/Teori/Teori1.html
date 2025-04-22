@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Carrier Deals - Typography Implementation</title>
+    <style>
+        /* Base Styles and Typography System */
+        :root {
+            /* Typography */
+            --font-primary: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+            
+            /* Font Sizes */
+            --text-xs: 12px;
+            --text-sm: 14px;
+            --text-base: 17px;
+            --text-lg: 21px;
+            --text-xl: 24px;
+            --text-2xl: 32px;
+            --text-3xl: 40px;
+            --text-4xl: 48px;
+            
+            /* Font Weights */
+            --weight-light: 300;
+            --weight-regular: 400;
+            --weight-medium: 500;
+            --weight-semibold: 600;
+            --weight-bold: 700;
+            
+            /* Line Heights */
+            --leading-tight: 1.2;
+            --leading-normal: 1.3;
+            --leading-relaxed: 1.5;
+            
+            /* Colors */
+            --color-text-primary: #1d1d1f;
+            --color-text-secondary: #6e6e73;
+            --color-text-tertiary: #86868b;
+            --color-background: #ffffff;
+            --color-accent: #0066cc;
+            --color-light-background: #f5f5f7;
+        }
+        
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            font-size: var(--text-base);
+            line-height: var(--leading-normal);
+            color: var(--color-text-primary);
+            background-color: var(--color-background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Typography Classes */
+        .headline {
+            font-size: var(--text-4xl);
+            font-weight: var(--weight-bold);
+            line-height: var(--leading-tight);
+            letter-spacing: -0.003em;
+            margin-bottom: 20px;
+        }
+        
+        .subheadline {
+            font-size: var(--text-2xl);
+            font-weight: var(--weight-semibold);
+            line-height: var(--leading-tight);
+            margin-bottom: 16px;
+        }
+        
+        .intro-text {
+            font-size: var(--text-xl);
+            font-weight: var(--weight-regular);
+            line-height: var(--leading-relaxed);
+            color: var(--color-text-secondary);
+            margin-bottom: 32px;
+            max-width: 800px;
+        }
+        
+        .section-title {
+            font-size: var(--text-xl);
+            font-weight: var(--weight-semibold);
+            margin-bottom: 16px;
+        }
+        
+        .body-text {
+            font-size: var(--text-base);
+            font-weight: var(--weight-regular);
+            line-height: var(--leading-relaxed);
+            margin-bottom: 24px;
+            max-width: 700px;
+        }
+        
+        .footnote {
+            font-size: var(--text-sm);
+            font-weight: var(--weight-regular);
+            line-height: var(--leading-normal);
+            color: var(--color-text-tertiary);
+            margin-top: 40px;
+        }
+        
+        .label {
+            font-size: var(--text-sm);
+            font-weight: var(--weight-medium);
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            color: var(--color-text-secondary);
+        }
+        
+        .link {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+        
+        .link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Layout Containers */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: var(--color-light-background);
+        }
+        
+        .content-section {
+            padding: 60px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .offers-section {
+            padding: 40px 0;
+        }
+        
+        .offer-card {
+            margin-bottom: 30px;
+            padding: 32px;
+            background-color: var(--color-light-background);
+            border-radius: 12px;
+            text-align: left;
+        }
+        
+        .footer-section {
+            padding: 40px 0;
+            border-top: 1px solid #d2d2d7;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .headline {
+                font-size: var(--text-3xl);
+            }
+            
+            .subheadline {
+                font-size: var(--text-xl);
+            }
+            
+            .intro-text {
+                font-size: var(--text-lg);
+            }
+            
+            .hero {
+                padding: 60px 20px;
+            }
+            
+            .content-section {
+                padding: 40px 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .headline {
+                font-size: var(--text-2xl);
+            }
+            
+            .subheadline {
+                font-size: var(--text-lg);
+            }
+            
+            .hero {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1 class="headline">iPhone Carrier Deals</h1>
+            <p class="intro-text">Special offers available through participating carriers. Find the perfect plan from the carrier you want.</p>
+        </div>
+    </div>
+    
+    <section class="content-section">
+        <div class="container">
+            <h2 class="subheadline">Choose your carrier. Choose your deal.</h2>
+            <p class="body-text">Get the newest iPhone with special pricing when you trade in your eligible smartphone and activate with a participating carrier.</p>
+        </div>
+    </section>
+    
+    <section class="offers-section">
+        <div class="container">
+            <div class="offer-card">
+                <p class="label">Featured Offer</p>
+                <h3 class="section-title">Carrier A</h3>
+                <p class="body-text">Get up to $800 off iPhone when you trade in an eligible smartphone and activate a new line or upgrade an existing line.</p>
+                <a href="#" class="link">Learn more ></a>
+            </div>
+            
+            <div class="offer-card">
+                <p class="label">Limited Time</p>
+                <h3 class="section-title">Carrier B</h3>
+                <p class="body-text">Switch to Carrier B and get iPhone plus 6 months of premium wireless service included with eligible trade-in.</p>
+                <a href="#" class="link">Learn more ></a>
+            </div>
+            
+            <div class="offer-card">
+                <p class="label">New Customers</p>
+                <h3 class="section-title">Carrier C</h3>
+                <p class="body-text">New customers save $500 on any iPhone with eligible trade-in and activation on an unlimited plan.</p>
+                <a href="#" class="link">Learn more ></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer-section">
+        <div class="container">
+            <p class="footnote">Offers available for a limited time at participating locations. Credit approval and activation of service required. Terms and conditions apply. Contact carriers for complete details.</p>
+        </div>
+    </section>
+</body>
+</html>

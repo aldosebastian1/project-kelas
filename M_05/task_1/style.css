@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+header {
+    background: rgb(5, 112, 153);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 5px solid rgb(13, 34, 138);
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a {
+    border-bottom: 2px solid transparent;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    border-color: #fff;
+}
+
+main {
+    padding: 20px;
+    max-width: auto;
+    min-width: 200px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 25px;
+    border: 2px solid #ccc;
+    border-radius: 40px;
+    background-color: #fff;
+    color: black;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.teks-gambar {
+    display: block;
+    text-align: center;
+}
+
+aside {
+    background: #f1f1f1;
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+p a {
+    display: inline-block;
+    padding: 2px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+p a:hover {
+    color: blue;
+}
+
+
+/* 
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    line-height: 1.6;  
+    background-color: #e0f7fa; 
+    color: #333; 
+    max-width: auto;
+    min-width: 300px;
+}  
+header {  
+    background: rgb(1, 73, 109);  
+    color: #fff;  
+    padding: 10px 20px;  
+    text-align: center;  
+    border-bottom: 3px solid rgb(13, 34, 138); 
+}  
+nav {  
+    margin: 10px 0;  
+}  
+nav a {  
+    color: white;  
+    margin: 0 15px;  
+    text-decoration: none;  
+    font-size: 18px;  
+}  
+.navbar a{
+    border-radius: 3px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+}
+.navbar a:hover,.navbar a.active{
+    border-color: #fff;
+}
+
+main {  
+    padding: 20px;  
+}  
+article {  
+    margin-bottom: 20px;  
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 40px; 
+    background-color: #fff; 
+}  
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+.teks-gambar {
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+}
+aside {  
+    background: #f1f1f1;  
+    padding: 15px;  
+    margin: 20px 0;  
+    border: 1px solid #ccc; 
+}  
+footer {  
+    background: #333;  
+    color: white;  
+    text-align: center;  
+    padding: 10px 0;  
+    position: relative;  
+    bottom: 0;  
+    width: 100%;  
+    font-size: 14px; 
+}  
+a  i {
+    color: white;
+    text-decoration: none;
+
+} */
