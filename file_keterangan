@@ -1,0 +1,35 @@
+buat folder baru
+mkdir M07
+
+Meng-clone Proyek M06
+git clone [URL_REPOSITORY_M06] M07  
+
+Menambah Percabangan (Branch) Baru
+cd M07  
+git checkout -b keterangan
+
+Membuat dan Mengisi File Keterangan
+touch file_keterangan.txt  
+nano file_keterangan.txt
+
+NIM: 123456789  
+Nama: John Doe  
+Kelas: 12A  
+No PC: 01  
+
+Menambahkan File ke Repository Lokal
+git add file_keterangan.txt  
+
+commit perubahan
+git commit -m "Ini penambahan file berupa keterangan data pribadi"
+
+Melakukan Push ke GitHub
+git push origin keterangan
+
+Melihat URL Repositori di Command Line
+cd /path/to/M06  
+
+git remote -v  
+
+origin  https://github.com/username/nama-repositori.git (fetch)  
+origin  https://github.com/username/nama-repositori.git (push)
